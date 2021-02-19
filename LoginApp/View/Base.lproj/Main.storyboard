@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mpz-9h-yz6">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oZE-FX-Jcm">
+                                <rect key="frame" x="70" y="62.5" width="180" height="355"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-oC-1T8">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="317"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premie" translatesAutoresizingMaskIntoConstraints="NO" id="SrR-l5-kLr">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="bDF-pq-SBo"/>
+                                                    <constraint firstAttribute="width" constant="180" id="mxH-5F-BNE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8Y-9ME" customClass="DesignableTextField" customModule="LoginApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="193" width="180" height="34"/>
+                                                <color key="tintColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="hb8-uv-8NY"/>
+                                                    <constraint firstAttribute="height" constant="34" id="tg0-S4-HkM"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="person" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pHG-fk-hlT"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-ED-qtm" customClass="DesignableTextField" customModule="LoginApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="180" height="34"/>
+                                                <color key="tintColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="gfD-zQ-CYs"/>
+                                                    <constraint firstAttribute="width" constant="180" id="w6r-9K-Ap4"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="key" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WbO-IT-ZcM"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9A-9R-65w" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="287" width="180" height="30"/>
+                                                <color key="backgroundColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="11h-VH-TGb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Login"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpe-zY-qOw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="9xi-k5-eVG">
+                                        <rect key="frame" x="0.0" y="325" width="180" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ff-EG-4My">
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="30"/>
+                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="12"/>
+                                                <state key="normal" title="Forgot user?"/>
+                                                <connections>
+                                                    <action selector="forgotUserTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ogh-ca-h2p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po6-N5-cIE">
+                                                <rect key="frame" x="105" y="0.0" width="75" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="SVW-mB-ceo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="12"/>
+                                                <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3do-A4-ud3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oZE-FX-Jcm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5n0-j9-1fU"/>
+                            <constraint firstItem="oZE-FX-Jcm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KSR-fi-DVk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aGn-cX-UGR"/>
+                    <connections>
+                        <outlet property="PasswordTextField" destination="SKX-ED-qtm" id="1Mu-8N-gWH"/>
+                        <outlet property="userNameTextField" destination="Fu4-8Y-9ME" id="MTP-v4-FSF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="127.5"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="wvq-CI-1eC">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="dEo-lD-CjD" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SIU-da-N7a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy2-Uc-NZf" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LUX-hu-GmO"/>
+                                    <constraint firstAttribute="width" constant="50" id="Utj-y9-6rr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="X"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="dEo-lD-CjD" eventType="touchUpInside" id="vCn-1K-qlp"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bH5-n8-C2q">
+                                <rect key="frame" x="23" y="179" width="274" height="122"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hH-tl-B62">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="ud9-7M-uC4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                                        <color key="textColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-oP-5xG">
+                                        <rect key="frame" x="0.0" y="65" width="274" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="8Eu-eU-ucQ"/>
+                                            <constraint firstAttribute="width" constant="274" id="N3P-CZ-Zvh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="24"/>
+                                        <color key="textColor" red="0.26733240489999999" green="0.049833968280000002" blue="0.36150008439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xft-w7-4gz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bH5-n8-C2q" firstAttribute="centerX" secondItem="SIU-da-N7a" secondAttribute="centerX" id="1te-O7-Vee"/>
+                            <constraint firstItem="wy2-Uc-NZf" firstAttribute="top" secondItem="xft-w7-4gz" secondAttribute="top" constant="20" id="Heu-Zc-0YZ"/>
+                            <constraint firstItem="wy2-Uc-NZf" firstAttribute="leading" secondItem="xft-w7-4gz" secondAttribute="leading" constant="16" id="LJ9-hV-Iof"/>
+                            <constraint firstItem="bH5-n8-C2q" firstAttribute="centerY" secondItem="SIU-da-N7a" secondAttribute="centerY" id="QSV-ks-cb6"/>
+                            <constraint firstItem="xft-w7-4gz" firstAttribute="trailing" secondItem="wy2-Uc-NZf" secondAttribute="trailing" constant="254" id="jyl-mO-fe9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="4hH-tl-B62" id="YVY-7e-AaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rS-AB-iSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753.125" y="127.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WSY-jZ-lr7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mpz-9h-yz6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mhK-hv-PWx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sFF-Vd-KhH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeC-l1-MfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Fu4-8Y-9ME">
+            <size key="intrinsicContentSize" width="120.5" height="34"/>
+        </designable>
+        <designable name="SKX-ED-qtm">
+            <size key="intrinsicContentSize" width="118" height="34"/>
+        </designable>
+        <designable name="n9A-9R-65w">
+            <size key="intrinsicContentSize" width="32" height="28"/>
+        </designable>
+        <designable name="wy2-Uc-NZf">
+            <size key="intrinsicContentSize" width="30" height="45"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="key" catalog="system" width="86" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="premie" width="2000" height="2000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
